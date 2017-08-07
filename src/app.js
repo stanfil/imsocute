@@ -1,9 +1,13 @@
 let express = require('express');
 let orm = require('orm');
 let app = express();
-let bodyPaser = require('body-parser');
+
+let bodyParser = require('body-parser');
+
+var jsonParser = bodyParser.json()
+let urlencodedParser = bodyParser.urlencoded({extended: true});
+
 let path = require('path');
-let urlencodedParser = bodyPaser.urlencoded({extended: true});
 let appRoot = path.join(__dirname, '/');
 
 app.all('*', function (req, res, next) {
@@ -30,8 +34,14 @@ app.use(orm.express(`sqlite://${appRoot}jfglxt.db`, {
             user_pn : String,
             manager_pn : String
         });
+        next();
     }
 }));
+
+app.post('/user', jsonParser, function (req, res) {
+    let registerUser = require("./registerUser");
+    registerUser.registerUser(req, res);
+});
 
 app.listen(8081, function () {
     console.log("App is listening on port 8081!");
