@@ -1,0 +1,66 @@
+.container{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 98%;
+    margin: 0px auto;
+    height: 100%;
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+#carousel-example-generic,.carousel-inner,.item,img{
+    width: 100%;
+    height: 100%;
+}
+#login_box{
+    width: 450px;
+    height: 250px;
+    background: linear-gradient(gainsboro,darkgray);
+    position: relative;
+    top: -450px;
+    left: 650px;
+    z-index: 99999;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+#login_box ul li{
+    list-style-type: none;
+    float: left;
+    padding: 10px 46px;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    color: dodgerblue;
+    font-size: 20px;
+    background-color: white;
+}
+#login_box ul li:active{
+    background-color: #2aabd2;
+    color: white;
+}
+#login_user-btu{
+
+}
+#login_user,#login_admin{
+    clear: both;
+    width: 370px;
+    height: 180px;
+    margin: 0px auto;
+    border: 1px solid dodgerblue;
+    border-top: none;
+}
+#login_admin{
+    display: none;
+}
+#login_box input,button{
+    width: 320px;
+    margin: 5px 17px;
+    padding: 8px;
+    border-radius: 5px;
+}
+button{
+    background-color: #2aabd2;
+}
