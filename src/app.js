@@ -19,7 +19,7 @@ app.use(orm.express(`sqlite://${appRoot}jfglxt.db`, {
         models.User = db.define("user", {
             user_name : String,
             phoneNumber : String,
-            /*password : String,*/
+            password : String,
             points : Number,
             manager : Number
         });
