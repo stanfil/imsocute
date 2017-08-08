@@ -19,7 +19,7 @@ app.use(orm.express(`sqlite://${appRoot}jfglxt.db`, {
         models.User = db.define("user", {
             user_name : String,
             phoneNumber : String,
-            password : String,
+            /*password : String,*/
             points : Number,
             manager : Number
         });
@@ -30,8 +30,14 @@ app.use(orm.express(`sqlite://${appRoot}jfglxt.db`, {
             user_pn : String,
             manager_pn : String
         });
+        next();
     }
 }));
+
+app.get('/users/all',function (req,res) {
+    let allUserInfo = require('./allUsersInfo');
+    allUserInfo.findAllUserInfo(req,res);
+});
 
 app.listen(8081, function () {
     console.log("App is listening on port 8081!");
