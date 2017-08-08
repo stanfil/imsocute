@@ -1,0 +1,75 @@
+.container,body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+.main{
+    width: 98%;
+    margin: 0px auto;
+    height: auto;
+    background-color: gainsboro;
+    border-radius: 10px;
+    position: relative;
+}
+#carousel-example-generic,.carousel-inner,.item,img{
+    width: 100%;
+    height: 600px;
+}
+#login_box{
+    width: 450px;
+    height: 270px;
+    background: linear-gradient(gainsboro,darkgray);
+    position: absolute;
+    top:160px;
+    left: 640px;
+    z-index: 99999;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+#login_box ul li{
+    list-style-type: none;
+    float: left;
+    padding: 10px 46px;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    color: dodgerblue;
+    font-size: 20px;
+    background-color: white;
+}
+#login_box ul li:hover{
+    background-color: #2aabd2;
+    color: white;
+}
+#login_user-btu{
+
+}
+#login_user,#login_admin{
+    clear: both;
+    width: 370px;
+    height: 200px;
+    margin: 0px auto;
+    border: 1px solid dodgerblue;
+    border-top: none;
+}
+#login_admin{
+    display: none;
+}
+#login_box input,button{
+    width: 320px;
+    margin: 5px 25px;
+    padding: 8px;
+    border-radius: 5px;
+}
+button{
+    background-color:blue;
+    color: white;
+    font-size: 18px;
+}
+#login_box a{
+    float: right;
+    color: white;
+    font-size: 18px;
+    padding:5px 32px;
+}
