@@ -53,18 +53,22 @@
         <!--Carousel figure end-->
         <div id="login_box">
             <ul>
-                <li id="login_user_btu" class="active" onclick="change_div('login_user','login_admin')">用户登录</li>
-                <li id="login_admin_btu" onclick="change_div('login_admin','login_user')">管理员登录</li>
+                <li id="login_user_btu" type="button" onclick="change_div('login_user','login_admin')" class="highlighted">用户登录</li>
+                <li id="login_admin_btu" type="button" onclick="change_div('login_admin','login_user')" >管理员登录</li>
             </ul>
             <div id="login_user" >
                 <input placeholder="username">
                 <input placeholder="password">
                 <button>Login</button>
+                <a href="#">forget password>>></a>
+                <a>@register</a>
             </div>
             <div id="login_admin">
                 <input placeholder="admin_name">
                 <input placeholder="password">
                 <button>Login</button>
+                <a href="#">forget password>>></a>
+                <a>@register</a>
             </div>
         </div>
     </div>
